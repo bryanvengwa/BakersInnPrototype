@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Bakers Inn Zimbabwe</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="fonts/stylesheet.css">
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="icon" href="imgs/footer logo.png">
+       
+</head>
+<body>
+       <nav>
+              <a href="index.html">
+              <div class="logo">
+                            <img src="imgs/bakersinnlogo.png" class="img-fluid" alt="logo">
+                     </div>
+              </a>
+              <ul>
+                     <li><a href="about.html">About us</a></li>
+                     <li><a href="products.html">Products</a></li>
+                     <li><a href="recipes.html">Recipes</a></li>
+                     <li><a href="kids.html">Kid's Corner</a></li>
+                     <li> <button><a href="contact.html">Contact Us</a></button> </li>
+              </ul>
+       </nav>
+       <header>
+              <div class="container back ">
+                     <div class="gradient">
+
+                            <div class="row">
+                                   <div class="col-lg-4 col-md-6  header-text">
+                                          <h1>Bringing you the <br> <span class="underline" >best value</span> at the <br> <span class="underline" > best prices.</span> </h1>
+                                          <p>The freshest sandwiches you can make with Baker's inn soft white loaf.</p>
+                                          <button>Read More</button>
+                                          
+                                   </div>
+                                   
+                                   <div class="col-lg-8 col-md-6 header-bread">
+                                          <div class="bread">
+                                                 <img src="imgs/groupheader bread.png"  class="img-fluid" alt="loaves of bread">
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </header>
+
+       <section class="about">
+              <div class="container">
+                     <div class="row">
+                            <div class="col-lg-5 col-md-5">
+                                   <h1>About Baker's Inn</h1>
+                            </div>
+                            <div class=" col-lg-7 col-md-7">
+                                   <p>It all started in the eighties when Baker's Inn was just a small confectionery company that employed 40 people and produced about 30,000 loaves a day. We now aim to provide a nourishing, convinient and accessible answer to hunger's call. </p>
+                                   <button class="btn" >READ MORE</button>
+                            </div>
+                     </div>
+                     <div class="row bottom">
+                            <div class="col-md-3">
+                                   <div class="img-container">
+                                          <img src="imgs/sandwich.png" class="img-fluid" alt="sandwich">
+                                   </div>
+                            </div>
+                            <div class="col-md-3">
+                                    <div class="img-container">
+                                          <img src="imgs/pie.png" class="img-fluid" alt="pie">
+                                   </div>
+                            </div>
+                            <div class="col-md-3">
+                                    <div class="img-container">
+                                          <img src="imgs/doughnut tea.png" class="img-fluid" alt="doughnut with tea">
+                                   </div>
+                            </div>
+                            <div class="col-md-3">
+                                    <div class="img-container">
+                                          <img src="imgs/slices.png" class="img-fluid" alt="slices">
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </section>
+       <section class="products">
+              <div class="container">
+                     <div class="row">
+                            <h1>Our Product Range</h1>
+                            <div class="col-md-3">
+                                   <div class="img-container">
+                                          <img src="imgs/breadslices.png" class=img-fluid alt="bread slices">
+                                          <div class="overlay"><h2>Bread</h2></div>
+                                   </div>
+                            </div>
+                            <div class="col-md-3">
+                                    <div class="img-container">
+                                          <img src="imgs/pie.png" class=img-fluid alt="meat pies">
+                                          <div class="overlay"><h2>Meat Pies</h2></div>
+                                          
+                                   </div>
+                            </div>
+                            <div class="col-md-3">
+                                    <div class="img-container">
+                                          <img src="imgs/scones.png" class=img-fluid alt="scones">
+                                          
+                                          <div class="overlay"><h2>Scones</h2></div>
+                                   </div>
+                            </div>
+                            <div class="col-md-3">
+                                    <div class="img-container">
+                                          <img src="imgs/donuts.png" class=img-fluid alt="Dougnuts" >
+                                         
+                                          <div class="overlay"> <h2>Dougnuts</h2></div>
+                                   </div>
+                            </div>
+                           <div class="button-holder"> <button>VIEW COMPLETE RANGE</button></div>
+                     </div>
+              </div>
+       </section>
+       <section class="bookings">
+              <div class="container">
+                     <div class="row">
+                            <div class="col-lg-6 col-md-7  text">
+                                   <h1>Book A Factory Tour</h1>
+                                   <p>Keep on seeing how Baker's Inn products are made?
+                                          Are you intrested in a feild trip day for your school's class?
+                                          Get in touch with us to book a tour of our factory that is
+                                          closest to you. Fill in the booking form and will get back to you.
+                                   </p>
+                                   <button class="btn openModalA" >BOOK FACTORY TOUR</button>
+                            </div>
+                            <div class="col-lg-6 col-md-5  ">
+                                   <div class="img-container">
+                                          <img src="imgs/factory bread.png" class="img-fluid" alt="factory bread">
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       <div class="modalA hidden">
+      <button class="close-modalA">&times;</button>
+      <h1>Book A Factory Tour</h1>
+                     <form action="">
+                            <div class="flex-container">
+                                   <div class="div">
+                                          <input type="text" placeholder="Name of Organisation">
+                                   </div>
+                                   <div class="div">
+                                          <input type="text" placeholder="Name of Contact Person" >
+                                   </div>
+                            </div>
+                            <div class="flex-container">
+                                     <div class="div">
+                                          <input type="text" placeholder="Organization Address" >
+                                     </div>
+                                   <div class="div">
+                                          <input type="text" placeholder="Organization’s Resident Town" >
+                                   </div>
+                            </div>
+                            <div class="flex-container">
+                              <div class="div">
+                                   <input type="text" placeholder="Contact Person’s Telephone" >
+                              </div>
+                                   <div class="div">
+                                          <input type="text" placeholder="Contact Person’s E-mail" >
+                                   </div>
+                            </div>
+                            <div class="flex-container">
+                                   <div class="div">
+                                          <input type="text" placeholder="Date of Visit" >
+                                   </div>
+                                     <div class="div">
+                                          <select name="participants" class="w50" id="participants">
+                                                 <option value="30">Number of participants</option>
+                                                 <option value="30">30</option>
+                                                 <option value="60">60</option>
+                                                 <option value="100">100</option>
+                                          </select>
+                                     </div>
+                            </div>
+                            <div class="div">
+                                   <select name="age" class="w50"  id="">
+                                          <option value="">Age Range Of Participants</option>
+                                          <option value="">6-12</option>
+                                          <option value="">12-18</option>
+                                          <option value="">18-25</option>
+                                          <option value="">25+</option>
+                                   </select>
+
+                            </div>
+                     </form>
+                     <div class="flex-containers">
+                            <div class="parag"  >
+
+                                   <p class="left">Plant Visit <a href="#">Terms & Conditions</a></p>
+                            </div>
+                            <div class="parag">
+                                   
+                                   <p class="right">Plant Visit <a href="#">Safety Regulations</a></p>
+                            </div>
+                            
+                     </div>
+                     <div class="div">
+                            <div class="flex">
+                                   <form action="">
+                                          <input type="checkbox" id="knowledge" >
+                                          
+                                   </form>
+                                   <p class="your">Your organisation has agreed to the submission of this application and you have authorisation to submit it. The information you have provided on behalf of your organisation is accurate, full and correct.</p>
+                            </div>
+                            <div class="flex">
+                                   <form action="">
+                                          <input type="checkbox" id="knowledge" >
+                                          
+                                   </form>
+                                   <p>Have Read The Safety Regulations</p>
+                            </div>
+
+                            <div class="div "><button class="btn button" >Submit</button></div>
+                     </div>
+                     
+                     
+              </div>
+              <div class="overlays"></div>
+              
+       </section>
+       <section class="donate">
+              <div class="container">
+                     <div class="row">
+                               <div class="col-lg-6 col-md-5 ">
+                                   <div class="img-container">
+                                          <img src="imgs/donate .png" class="img-fluid" alt="donate">
+                                   </div>
+                            </div>
+                                           <div class="col-lg-6 col-md-7  text">
+                                   <h1>Request A Donation</h1>
+                                   <p>If you are holding an event that you wish to have us donate to we're more than glad to help. Fill in the donation form for us to best understand how we can increase your event's impact in the local community. </p>
+                                   <button class="btn openModalB" >REQUEST DONATION</button>
+                            </div>
+                     </div>
+              </div>
+                     <div class="modalA modalB hidden">
+      <button class="close-modalB">&times;</button>
+      <h1>Request Product Donations</h1>
+      <p class="p-tag" >You can apply for product donations by completing this form, we will contact you should your application be successful. Please bear in mind that we will need at least 3 weeks’ notice to the date of your event</p>
+                     <form action="">
+                            <div class="flex-container">
+                                   <div class="div">
+                                          <input type="text" placeholder="Name of Organisation">
+                                   </div>
+                                   <div class="div">
+                                          <input type="text" placeholder="Name of Contact Person" >
+                                   </div>
+                            </div>
+                            <div class="flex-container">
+                                     <div class="div">
+                                          <input type="text" placeholder="Contact Person Position" >
+                                     </div>
+                                   <div class="div">
+                                          <input type="text" placeholder="Organization Address" >
+                                   </div>
+                            </div>
+                            <div class="flex-container">
+                              <div class="div">
+                                   <input type="text" placeholder="Contact Person’s Telephone" >
+                              </div>
+                                   <div class="div">
+                                          <input type="text" placeholder="Contact Person’s E-mail" >
+                                   </div>
+                            </div>
+                                   <div class="flex-container">
+                              <div class="div">
+                                   <input type="text" placeholder="Date of Event" >
+                              </div>
+                                   <div class="div">
+                                          <select name="donations" class="w50" id="donations">
+                                                 <option value="30">intended use of Donations</option>
+                                                 <option value="30">Charity</option>
+                                                 <option value="60">Fundraising</option>
+                                                 <option value="100">Sponsorship</option>
+                                          </select>
+                                   </div>
+                            </div>
+                            <div class="flex-containerB">
+
+                                     <div class="div">
+                                          <select name="participants" class="w50" id="participants">
+                                                 <option value="30">Number of Attendants</option>
+                                                 <option value="30">30</option>
+                                                 <option value="60">60</option>
+                                                 <option value="100">100</option>
+                                          </select>
+                                   </div>
+                                  <div class="div">
+                                   <select name="age" class="w50"  id="">
+                                          <option value="">What Product Are Specifically Looking For?</option>
+                                          <option value="">6-12</option>
+                                          <option value="">12-18</option>
+                                          <option value="">18-25</option>
+                                          <option value="">25+</option>
+                                   </select>
+
+                            </div>
+                            </div>
+                
+                     </form>
+           
+
+                            <div class="div "><button class="btn button openNext" >Proceed to next step</button></div>
+        
+            
+                     
+                     
+              </div>
+                                  <div class="modalC hidden">
+                                   <button class="close-modalC">&times;</button>
+                                   <h1>Request Product Donations</h1>
+                                   <form action="">
+                                          <div class="flex-container">
+                                                 <div class="div">
+                                                        <textarea name="productUse" id="products" cols="" rows="10" placeholder="How Do You Inted On Using the Product?" ></textarea>
+                                                 </div>
+                                          </div>
+                                          <div class="flex-containerB">
+                                                 <div class="div">
+                                                        <textarea name="benefit" id="benefit" class="benefit" cols="10" rows="10" placeholder="How will the community benefit from you as a result of our donation?" ></textarea>
+                                                 </div>
+                                          </div>
+                       
+                                   </form>
+                                   <div class="div "><button class="btn buttons" >Submit Application</button></div>
+                            </div>
+
+
+       </section>
+       <section class="kids">
+              
+              <div class="container back">
+                            <div class="gradient">
+                            <div class="row">
+                                   <div class="col-lg-6 col-md-7 mario">
+                                          <img src="imgs/mariofinal.png" class="img-fluid" alt="mario">
+                                   </div>
+                                   <div class="col-lg-6 col-md-5 text">
+                                          <h1>Kid's Corner</h1>
+                                          <p>let your children join the fun. Explore a place with exciting games and the top winners stand a chance to win exciting monthly prices!</p>
+                                          <button class="btn">PLAY GAMES</button>
+                                          
+                                   </div>
+                            </div>
+                 
+                     </div>
+                          
+              </div>
+       </section>
+       
+       <section class="recipe">
+              <div class="container">
+              <h1 class="heading" >Baker's Recipes</h1>
+                     <div class="row">
+                            <div class="center">
+                            <ul class="tab-links" >
+                                   <li data-tab="1" class=" tabs taber1 active">For kids</li>
+                                   <li data-tab="2" class=" tabs taber2" >For Vegans</li>
+                                   <li data-tab="3" class=" tabs taber3" >For Family</li>
+                                   <div class="line">
+
+                                   </div>
+                                   
+                            </ul>
+
+                            </div>
+                      
+                            <div class="row">
+                                   <div class="flex-container">
+                                   <div class="card" width="22rem" >
+                                          <div class="img-container">
+                                                 <img src="imgs/shwarma.png" data-tab="1" class="img-fluid recipes  active" alt="shwarma">
+                                                 <img src="imgs/shortbread.png" data-tab="2" class="img-fluid recipes hidden"  alt="shortbread">
+                                                 <img src="imgs/salmon.png" data-tab="3" class="img-fluid recipes hidden"  alt="salmon">
+                                          </div>
+                                          <div class="card-body">
+                                                <h4 class="card-title recipes active" data-tab="1"  >Shwarma Sandwich</h4>
+                                                <h4 class="card-title recipes hidden" data-tab="2"  >Sweet Shortbread</h4> 
+                                                <h4 class="card-title recipes hidden" data-tab="3"  >Salmon Strips</h4> 
+                                                 <div class="flexbox-container">
+                                                 <div class="text-container" >
+                                                        <h5>Prep Time :<span>20 min</span></h5>
+                                                 <h5>Serves    : <span>6 people</span> </h5>
+
+                                                 </div>
+                                                 <div class="arrow">
+                                                        <img src="imgs/arrow.png" class="img-fluid" alt="left arrow">
+                                                 </div>
+                                                 
+                                                 </div>
+                                          </div>
+                                   </div>
+                                                               <div class="card" width="22rem" >
+                                          <div class="img-container">
+                                                <img src="imgs/shwarma.png" data-tab="1" class="img-fluid recipes  active" alt="shwarma">
+                                                <img src="imgs/shortbread.png" data-tab="2" class="img-fluid recipes hidden"  alt="shortbread"> 
+                                                <img src="imgs/salmon.png" data-tab="3" class="img-fluid recipes hidden"  alt="salmon"> 
+                                          </div>
+                                          <div class="card-body">
+                                                 <h4 class="card-title recipes active" data-tab="1"  >Shwarma Sandwich</h4>
+                                                 <h4 class="card-title recipes hidden" data-tab="2"  >Sweet Shortbread</h4>
+                                                 <h4 class="card-title recipes hidden" data-tab="3"  >Salmon Strips</h4> 
+                                                 <div class="flexbox-container">
+                                                 <div class="text-container" >
+                                                        <h5>Prep Time :<span>20 min</span></h5>
+                                                 <h5>Serves    : <span>6 people</span> </h5>
+
+                                                 </div>
+                                                 <div class="arrow">
+                                                        <img src="imgs/arrow.png" class="img-fluid" alt="left arrow">
+                                                 </div>
+                                                 
+                                                 </div>
+                                          </div>
+                                   </div>
+                                                                <div class="card" width="22rem" >
+                                          <div class="img-container">
+                                                 <img src="imgs/shwarma.png" data-tab="1" class="img-fluid recipes  active" alt="shwarma">
+                                                 <img src="imgs/shortbread.png" data-tab="2" class="img-fluid recipes hidden"  alt="shortbread">
+                                                 <img src="imgs/salmon.png" data-tab="3" class="img-fluid recipes hidden"  alt="salmon">
+                                          </div>
+                                          <div class="card-body">
+                                                 <h4 class="card-title recipes active" data-tab="1"  >Shwarma Sandwich</h4>
+                                                 <h4 class="card-title recipes hidden" data-tab="2"  >Sweet Shortbread</h4>
+                                                 <h4 class="card-title recipes hidden" data-tab="3"  >Salmon Strips</h4> 
+                                                 <div class="flexbox-container">
+                                                 <div class="text-container" >
+                                                        <h5>Prep Time :<span>20 min</span></h5>
+                                                 <h5>Serves    : <span>6 people</span> </h5>
+
+                                                 </div>
+                                                 <div class="arrow">
+                                                        <img src="imgs/arrow.png" class="img-fluid" alt="left arrow">
+                                                 </div>
+                                                 
+                                                 </div>
+                                          </div>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                     </div>
+              </div>
+       </section>
+
+       <!-- ==START PROMOTIONS SECTIONS== -->
+       <section class="promotions">
+              <div class="container background">
+                     <div class="gradient">
+                     <div class="row">
+                            <div class="col-md-7" >
+                                   <div class="text-container">
+                                                        <h2>Get Notified About Promotions We Offer</h2>
+                                          <label for="">
+                                                 <input type="text" placeholder="your email" >
+                                                 <button>SUBMIT</button>
+                                          </label>
+
+                                   </div>
+                     
+                            </div>
+                            <div class="col-md-5">
+                                   <div class="img-container">
+                                          <img src="imgs/bottom bread group.png" class="img-fluid" alt="loaves of bread">
+                                   </div>
+                                   
+                            </div>
+                     </div>
+                     </div>
+              </div>
+       </section>
+       <footer>
+              <div class="container-fluid back">
+                     <div class="row">
+                            <div class="logo">
+                                   <div class="line"></div>
+                                   <div class="logo-container"> 
+                                          <img src="imgs/footer logo.png" class="img-fluid" alt="">
+                                   </div>
+                                   <div class="line"></div>
+                                   
+                            </div>
+                            <div class=" col-lg-5 col-md-3">
+                                   <h2 class="heading" >Instagram Feed</h2>
+                                   <div class="row feed">
+                                          <div class="col-md-4 feed-container">
+                                                 <img src="imgs/HOTBUN.png" class="img-fluid" alt="instafeed">
+                                          </div>
+                                          <div class="col-md-4 feed-container">
+                                                 <img src="imgs/insta feed.png" class="img-fluid" alt="instafeed">
+                                          </div>
+                                          <div class="col-md-4- feed-container">
+                                                    <img src="imgs/instafeed.png" class="img-fluid" alt="instafeed">
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3">
+                                
+                                   <ul>   <li class="heading" id="heading" >Our Location</li>
+                                          <li>1 Sheperton Road,</li>
+                                          <li>Graniteside,</li>
+                                          <li>Harare,</li>
+                                          <li>Zimbabwe.</li>
+                                   </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-4">
+                                    
+                                   <ul>   <li class="heading">Get In Touch With Us</li>
+                                          <li> <span class="icons"><img src="imgs/call.png" class="img-fluid " alt="call"></span> 08080151</li>
+                                          <li class="left" >08080152</li>
+                                          <li class="left" >+263 242 751 481</li>
+                                          <li class="left" >+263 242 710 334</li>
+                                          <li> <span class="icons"><img src="imgs/mail.png" class="img-fluid " alt="mail"></span> marketing@bakersinnzim.com</li>
+                                   </ul>
+
+                            </div>
+                            <div class="col-lg-1 col-md-2">
+                                   
+                                      <ul><li class="heading">Sitemap</li>
+                                          <li><a href="">Home</a></li>
+                                          <li><a href="">About Us</a></li>
+                                          <li><a href="">Recipes</a></li>
+                                          <li><a href="">Kid's Corner</a></li>
+                                   </ul>
+
+                            </div>
+                            <div class="row">
+                                   <div class="line"></div>
+                                   <div class="bottom">
+                                   <div class="left">
+                                          <!-- <div class="inn-container"> -->
+                                                 <h5>subsidiary of</h5>
+                                                  <img src="imgs/inscor_logo@2x 1.png" class="img-fluid" alt=""> 
+
+                                          <!-- </div> -->
+                                          
+                                   </div>
+                                   <div class="right">
+                                          <p>Copyright © 2022 Bakers Inn. All rights reserved. Site by <span>Bryan Vengwa</span> </p>
+                                   </div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </footer>
+       <div class="loader"></div>
+       <script src="script.js"></script>
+       <!-- <script src="bootstrap/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

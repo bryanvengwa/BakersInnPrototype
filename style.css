@@ -1,0 +1,2328 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-body {
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+nav a .logo {
+  height: 3rem;
+  width: 12rem;
+  z-index: 1;
+  margin-left: 0em;
+}
+nav a .logo img {
+  margin-top: 2em;
+  width: 100%;
+  -o-object-fit: contian;
+     object-fit: contian;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+nav ul li {
+  padding: 0.9em;
+}
+nav ul li a {
+  text-decoration: none;
+  z-index: 1000;
+  color: #261B6C;
+  font-family: "black";
+  font-size: 1.4rem;
+  display: none;
+}
+nav ul button {
+  display: inline-block;
+  background-color: #b2904c;
+  color: white;
+  border: none;
+  padding: 0.4em 2.1em;
+  border-radius: 3px;
+  font-family: "heavy";
+  font-size: 1.3rem;
+  margin-top: -5%;
+  margin-right: 1.5em;
+  display: none;
+}
+nav ul button a {
+  color: white;
+}
+
+header {
+  z-index: 300;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+header .gradient {
+  background-image: url(imgs/African\ Pattern\ 2.png);
+  background-size: contain;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+header .back {
+  background: #261B6C;
+  position: relative;
+  border-radius: 5px;
+  padding: 3em;
+}
+header #back {
+  height: 60vh;
+  padding-bottom: 1em;
+  background-image: url(imgs/about\ us\ header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+header #back .gradient {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(23, 22, 22, 0.9));
+}
+header #back .text {
+  z-index: 100;
+  display: flex;
+  bottom: 0;
+  align-items: end;
+  height: 100%;
+  justify-content: space-between;
+}
+header #back .text h2 {
+  color: white;
+  font-family: "black";
+  font-size: 2.5rem;
+  z-index: 100;
+}
+header .down-arrow {
+  z-index: 100;
+}
+header #products {
+  position: relative;
+  height: 60vh;
+  padding-bottom: 1em;
+  background-image: url(imgs/products\ banner.png);
+}
+header #products .gradient {
+  bottom: 0;
+  border-radius: 5px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(23, 22, 22, 0.9));
+}
+header .text {
+  display: flex;
+  bottom: 0;
+  align-items: end;
+  height: 100%;
+  justify-content: space-between;
+}
+header .text h2 {
+  color: white;
+  font-family: "black";
+  z-index: 300;
+  font-size: 2.5rem;
+}
+header .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: "black";
+}
+header .header-text h1 {
+  font-weight: 100;
+}
+header .header-text h1 .underline {
+  text-decoration: underline;
+  text-decoration-color: #b2904c;
+}
+header .header-text p {
+  font-family: "medium";
+  font-size: 1.2rem;
+}
+header .header-text button {
+  display: inline-block;
+  background-color: #b2904c;
+  color: white;
+  border: none;
+  padding: 0.4em 2.1em;
+  border-radius: 3px;
+  font-family: "heavy";
+  font-size: 1.3rem;
+  font-size: 1.2rem;
+  width: 47.5%;
+  text-transform: uppercase;
+  padding: 0.5em 0em;
+}
+header .header-bread .bread {
+  margin-left: -1em;
+}
+header .header-bread .bread img {
+  width: 100%;
+}
+
+#backs .backs {
+  position: relative;
+  height: 60vh;
+  padding-bottom: 1em;
+  background-image: url(imgs/contactusheader.png);
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#backs .backs .gradient {
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
+}
+#backs .backs .text {
+  display: flex;
+  bottom: 0;
+  align-items: end;
+  height: 100%;
+  justify-content: space-between;
+}
+#backs .backs .text h2 {
+  color: white;
+  font-family: "black";
+  font-size: 2.5rem;
+}
+
+#kids-header {
+  margin-top: -2em;
+}
+#kids-header #flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#kids-header #flex-container .text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#kids-header #flex-container .text-container h1 {
+  color: #261B6C;
+  font-size: 6rem;
+  font-family: "dumb";
+}
+#kids-header #flex-container .img-container img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#recipes-header h1 {
+  color: #261B6C;
+  font-size: 2.4rem;
+}
+#recipes-header p {
+  color: #261B6C;
+}
+#recipes-header h3 {
+  color: #b2904c;
+}
+#recipes-header .back {
+  background: unset;
+}
+#recipes-header #flex-container {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+#recipes-header #flex-container .right .abs-container {
+  position: relative;
+}
+#recipes-header #flex-container .right .anime {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  justify-content: center;
+}
+#recipes-header #flex-container .right .gif {
+  position: absolute;
+  z-index: 500;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(137, 132, 132, 0.325);
+}
+#recipes-header #flex-container .img-container {
+  width: 50%;
+}
+#recipes-header #flex-container .img-container .abs-container {
+  width: 100%;
+  height: 100%;
+}
+#recipes-header #flex-container .img-container .abs-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mission {
+  color: #261B6C;
+  margin-top: 3em;
+  height: 40vh;
+}
+.mission .container, .mission .row {
+  height: 100%;
+  background: rgb(247, 246, 231);
+  border-radius: 5px;
+}
+.mission .mission-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.mission .mission-container .img-container img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mission .mission-container .text-container {
+  margin-left: 1em;
+  line-height: 1.4em;
+  font-family: "light";
+}
+.mission .mission-container .text-container h2 {
+  font-family: "heavy";
+}
+.mission .mission-container .text-container p {
+  width: 90%;
+}
+
+.values {
+  padding-bottom: 1em;
+  color: #261B6C;
+  background: #F8F8F8;
+  margin-top: 5em;
+}
+.values h1 {
+  padding: 1.5em 0;
+  text-align: center;
+  font-family: "black";
+}
+.values .card {
+  border: none;
+  width: 90%;
+}
+.values .card .card-body {
+  background: #F8F8F8;
+}
+.values .card .card-body h2 {
+  text-align: center;
+  font-family: "black";
+}
+.values .card .card-body p {
+  text-align: center;
+  font-family: "light";
+}
+
+#factories {
+  padding-top: -1em;
+  background: unset;
+}
+#factories #factory-background {
+  background: rgb(247, 246, 231);
+  border-radius: 5px;
+}
+#factories .card {
+  border: none;
+  width: 90%;
+}
+#factories .card .img-container {
+  width: 100%;
+  height: 100%;
+}
+#factories .card .img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#factories .card .card-body {
+  background: rgb(247, 246, 231);
+}
+#factories .card .card-body span {
+  font-family: "heavy";
+}
+#factories .card .card-body h2 {
+  text-align: left;
+  font-family: "black";
+}
+#factories .card .card-body p {
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: "light";
+}
+
+.depots {
+  margin-top: 5em;
+  color: #261B6C;
+}
+.depots h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: "black";
+}
+.depots .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.depots table {
+  width: 80%;
+  font-size: 1.2rem;
+  margin-top: 2em;
+}
+.depots .in {
+  border-right: 3px solid rgb(247, 246, 231);
+  border-left: 2px solid rgb(247, 246, 231);
+}
+.depots th {
+  padding: 0.5em;
+  font-family: "black";
+  font-size: 1.35rem;
+  border-bottom: 3px solid rgb(247, 246, 231);
+}
+.depots #space {
+  height: 2.5em;
+}
+.depots #space td {
+  border: none;
+}
+.depots #space .in {
+  border-right: 3px solid rgb(247, 246, 231);
+  border-left: 2px solid rgb(247, 246, 231);
+}
+.depots td {
+  padding: 0.4em;
+  font-family: "light";
+  border-right: 2px solid rgb(247, 246, 231);
+  border-left: 3px solid rgb(247, 246, 231);
+}
+.depots .heavy {
+  font-family: "heavy";
+  width: 25%;
+  border: none;
+}
+
+.enquiries {
+  margin-top: 7em;
+  background: #F8F8F8;
+  padding: 3em;
+}
+.enquiries #bottom {
+  font-family: "light";
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #261B6C;
+}
+.enquiries #bottom h4 {
+  font-family: "black";
+}
+.enquiries #bottom p {
+  text-decoration: underline;
+}
+
+.about {
+  margin-top: 5em;
+}
+.about h1 {
+  color: #261B6C;
+  font-family: "black";
+}
+.about p {
+  color: #261B6C;
+  font-family: "light";
+  font-size: 1.2rem;
+  width: 80%;
+  font-size: 1.25rem;
+}
+.about button {
+  display: inline-block;
+  background-color: #b2904c;
+  color: white;
+  border: none;
+  padding: 0.4em 2.1em;
+  border-radius: 3px;
+  font-family: "heavy";
+  font-size: 1.3rem;
+}
+.about .bottom {
+  margin-top: 4em;
+}
+.about .bottom .img-container {
+  width: 90%;
+  height: 100%;
+}
+.about .bottom .img-container img {
+  width: 110%;
+  height: 90%;
+}
+
+.callback {
+  color: #261B6C;
+  margin-top: 7em;
+}
+.callback h1 {
+  font-family: "black";
+  text-align: center;
+}
+.callback p {
+  font-family: "light";
+  text-align: center;
+}
+.callback form {
+  width: 100%;
+  color: #000000;
+}
+.callback form .div {
+  width: 100%;
+  padding: 1em;
+}
+.callback form .w50 {
+  color: #000000;
+  padding: 1em;
+  width: 100%;
+  height: 4em;
+  background: rgb(247, 246, 231);
+  border: none;
+}
+.callback form .w100 {
+  color: #000000;
+  padding: 1em;
+  width: 100%;
+  height: 4em;
+  background: rgb(247, 246, 231);
+  border: none;
+}
+.callback form .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.callback form #batani {
+  border-radius: 5px;
+  background: #b2904c;
+  color: white;
+  padding: unset;
+  height: 2.8em;
+  font-size: 1.4rem;
+  font-family: "black";
+}
+.callback form textarea {
+  min-height: 15rem;
+}
+
+.products {
+  background: #F8F8F8;
+  margin-top: 5rem;
+  padding-top: 4rem;
+}
+.products h1 {
+  text-align: center;
+  color: #261B6C;
+  font-family: "black";
+  margin-bottom: 3rem;
+}
+.products .img-container {
+  position: relative;
+}
+.products .overlay {
+  position: absolute;
+  display: none;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  font-family: "medium";
+  background: rgba(55, 54, 54, 0.315);
+}
+.products .overlay img {
+  border-radius: 10px;
+}
+.products .button-holder {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  text-align: center;
+}
+.products .button-holder button {
+  display: inline-block;
+  background-color: #b2904c;
+  color: white;
+  border: none;
+  padding: 0.4em 2.1em;
+  border-radius: 3px;
+  font-family: "heavy";
+  font-size: 1.3rem;
+}
+
+.bookings {
+  position: relative;
+  margin-top: 3em;
+}
+.bookings .text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.bookings h1 {
+  color: #261B6C;
+  font-family: "black";
+}
+.bookings p {
+  color: #261B6C;
+  font-family: "light";
+  font-size: 1.2rem;
+  width: 80%;
+}
+.bookings button {
+  display: inline-block;
+  background-color: #b2904c;
+  color: white;
+  border: none;
+  padding: 0.4em 2.1em;
+  border-radius: 3px;
+  font-family: "heavy";
+  font-size: 1.3rem;
+  font-size: 1.1rem;
+  margin-bottom: 2em;
+  padding: 0.55rem 1.3rem;
+  width: 90%;
+}
+.bookings .img-container img {
+  width: 87%;
+}
+
+.donate {
+  background: #F8F8F8;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.donate .text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.donate h1 {
+  color: #261B6C;
+  font-family: "black";
+}
+.donate p {
+  color: #261B6C;
+  font-family: "light";
+  font-size: 1.2rem;
+  width: 80%;
+}
+.donate button {
+  display: inline-block;
+  background-color: #b2904c;
+  color: white;
+  border: none;
+  padding: 0.4em 2.1em;
+  border-radius: 3px;
+  font-family: "heavy";
+  font-size: 1.3rem;
+  font-size: 1.1rem;
+  padding: 0.55rem 1.3rem;
+  width: 90%;
+}
+.donate .img-container {
+  margin-bottom: 1em;
+}
+.donate .img-container img {
+  width: 87%;
+}
+
+#donate {
+  background: unset;
+}
+#donate p {
+  line-height: 1em;
+  width: 100%;
+  font-size: 1.1rem;
+}
+#donate .text {
+  height: 100%;
+  padding-top: 2em;
+}
+#donate .signature {
+  display: flex;
+  justify-content: right;
+}
+#donate .signature h1 {
+  margin-top: 0.8em;
+  margin-right: 0.2em;
+}
+#donate .signature .sig-container {
+  height: 5rem;
+}
+#donate .signature .sig-container img {
+  height: 90%;
+  border-bottom: 1px solid rgb(209, 213, 246);
+}
+
+.kids .gradient {
+  background-image: url(imgs/African\ Pattern\ 2.png);
+  background-size: contain;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.kids .back {
+  background: #261B6C;
+  border-radius: 5px;
+}
+.kids .mario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kids .mario img {
+  height: 120%;
+  width: 150%;
+  margin-left: 3em;
+}
+.kids .text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.kids .text h1 {
+  font-family: "dumb";
+  font-size: 6rem;
+  margin-top: 1em;
+  width: 100%;
+}
+.kids .text p {
+  font-family: "medium";
+}
+.kids .text button {
+  background: red;
+  color: white;
+  padding: 1.3em 2em;
+  font-family: "black";
+  width: 50%;
+  margin-bottom: 2em;
+  align-self: center;
+}
+
+.recipe {
+  color: rgb(149, 136, 184);
+  margin-top: 6em;
+}
+.recipe .heading {
+  text-align: center;
+  font-family: "black";
+  color: #261B6C;
+}
+.recipe .center {
+  margin-bottom: 3em;
+  width: 100vw;
+}
+.recipe .center .tab-links {
+  width: 100%;
+  font-family: "black";
+  display: flex;
+  text-align: center;
+  border-bottom: 2px solid rgb(149, 136, 184);
+  justify-content: center;
+}
+.recipe .center .tab-links .active {
+  border-bottom: 0.5rem solid #b2904c;
+  color: #261B6C;
+  transition: 0.3s;
+}
+.recipe .center .tab-links .hidden {
+  display: none;
+}
+.recipe .center .tab-links li {
+  padding: 0.3em;
+  font-size: 1.2rem;
+}
+.recipe .flex-container {
+  color: #261B6C;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.recipe .flex-container .hidden {
+  display: none;
+  transition: 0.3s;
+}
+.recipe .flex-container .active {
+  display: block;
+  transition: 0.3s;
+}
+.recipe .flex-container .card {
+  width: 100%;
+  padding: 0.5em;
+  box-shadow: 1px 2px 15px 2px rgba(203, 203, 203, 0.621);
+  border: none;
+}
+.recipe .flex-container .card .img-container img {
+  width: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.recipe .flex-container .card .active {
+  display: block;
+}
+.recipe .flex-container .card .hidden {
+  display: none;
+}
+.recipe .flex-container .card .recipes {
+  font-family: "black";
+  color: #261B6C;
+  font-size: 1.6rem;
+}
+.recipe .flex-container .card .flexbox-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -2em;
+}
+.recipe .flex-container .card .flexbox-container .text-container h5 {
+  font-size: 0.99rem;
+}
+.recipe .flex-container .card .flexbox-container .text-container h5 span {
+  color: #b2904c;
+}
+.recipe .flex-container .card .flexbox-container .arrow {
+  height: 0.5rem;
+}
+.recipe .flex-container .card .flexbox-container .arrow img {
+  width: 65%;
+}
+
+#recipe .row {
+  width: 200vw;
+}
+#recipe #flex {
+  overflow-x: visible;
+}
+#recipe .flex-container {
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+#recipe .flex-container .card {
+  box-shadow: unset;
+  background: rgb(247, 246, 231);
+  width: 20rem !important;
+}
+#recipe .flex-container .card .img-container {
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+}
+#recipe .flex-container .card .img-container img {
+  height: 100%;
+  width: unset;
+  margin-top: -3em;
+}
+#recipe .flex-container .card .card-body {
+  margin-top: -3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#recipe .flex-container .card h3 {
+  font-family: "black";
+  text-align: center;
+  width: 85%;
+}
+#recipe .flex-container .card p {
+  text-align: center;
+  font-family: "light";
+  width: 85%;
+}
+
+.promotions {
+  margin-top: 5em;
+}
+.promotions .gradient {
+  background-image: url(imgs/African\ Pattern\ 2.png);
+  background-size: contain;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.promotions .background {
+  background: #b2904c;
+  padding-top: 2em;
+  border-radius: 5px;
+}
+.promotions .background .text-container {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-family: "black";
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.promotions .background .text-container h2 {
+  text-align: center;
+}
+.promotions .background .text-container label {
+  position: relative;
+  width: 90%;
+  height: 100%;
+}
+.promotions .background .text-container label input[type=text] {
+  border: none;
+  border-radius: 3px;
+  height: 2.4rem;
+  background: rgba(245, 245, 245, 0.151);
+  width: 100%;
+  padding: 0 16px;
+}
+.promotions .background .text-container label button {
+  position: absolute;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  margin: 0.3em;
+  width: 35%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #261B6C;
+  color: white;
+  border: none;
+  font-family: "heavy";
+}
+.promotions .background .img-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promotions .background .img-container img {
+  height: 80%;
+  margin-top: -3em;
+}
+
+.maze {
+  margin-top: 2em;
+}
+.maze .text-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.maze .text-container button {
+  display: inline-block;
+  background-color: #b2904c;
+  color: white;
+  border: none;
+  padding: 0.4em 2.1em;
+  border-radius: 3px;
+  font-family: "heavy";
+  font-size: 1.3rem;
+  width: 90%;
+}
+.maze .text-container h1 {
+  padding-top: 1em;
+  font-family: "black";
+}
+.maze .text-container p {
+  font-family: "black";
+}
+.maze #maze-background {
+  border-radius: 5px;
+  padding: 3em;
+  background: #018BF1;
+}
+.maze #pacman-background {
+  border-radius: 5px;
+  padding: 3em;
+  background: #261B6C;
+}
+.maze #pacman-background button {
+  background-color: #b2904c;
+  color: white;
+}
+.maze #risky-background {
+  background: #FF4655;
+  border-radius: 5px;
+  padding: 3em;
+}
+.maze #risky-background button {
+  background: white;
+  color: #FF4655;
+}
+
+footer {
+  margin-top: 5em;
+  color: white;
+}
+footer .back {
+  background-color: #261B6C;
+}
+footer .logo {
+  margin-bottom: 4em;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+footer .logo .line {
+  width: 60%;
+  height: 2px;
+  background: white;
+}
+footer .logo .logo-container {
+  text-align: center;
+}
+footer .logo .logo-container img {
+  width: 80%;
+}
+footer .heading {
+  font-family: "black";
+  font-size: 1.3rem;
+}
+footer #heading {
+  margin-top: 1em;
+}
+footer .left {
+  margin-left: 1.2em;
+}
+footer ul li {
+  font-size: 0.9rem;
+}
+footer ul li span img {
+  height: 1rem !important;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+footer .feed .feed-container {
+  width: 23%;
+}
+footer .feed img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .line {
+  width: 100%;
+  height: 2px;
+  background: white;
+  display: unset;
+  margin-top: 2em;
+}
+footer .bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+footer .bottom .left {
+  margin-top: 1em;
+  display: flex !important;
+  flex-direction: row;
+}
+footer .bottom .left img {
+  margin-top: -1em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 20%;
+}
+footer .bottom .right span {
+  color: #b2904c;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: opacity 0.5s, visibility 0.5s;
+  z-index: 5000;
+}
+
+.kids .mario {
+  margin-left: -2.5em;
+}
+.kids .mario img {
+  height: 120%;
+  width: 150%;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #b2904c;
+  border-top-color: rgb(247, 246, 231);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.bookings {
+  position: relative;
+}
+.bookings .close-modalA {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  top: 0.4em;
+  right: 0.4em;
+  font-size: 1rem;
+  padding: 0.3em;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: #261B6C;
+}
+.bookings .modalA {
+  position: absolute;
+  min-height: 170%;
+  padding: 1em;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.bookings .modalA h1 {
+  text-align: center;
+}
+.bookings .modalA .div {
+  width: 100%;
+  height: 4.2rem;
+  padding: 0.6em;
+}
+.bookings .modalA .div .w50, .bookings .modalA .div input {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  color: #000000;
+  background: rgb(247, 246, 231);
+  height: 100%;
+}
+.bookings .modalA .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bookings .modalA .flex-container .div {
+  width: 100%;
+}
+.bookings .modalA .flex-container .div input {
+  width: 100%;
+}
+.bookings .modalA .flex {
+  display: flex;
+  flex-direction: row;
+}
+.bookings .modalA .flex p {
+  font-size: 0.8rem;
+  width: 100%;
+  font-family: "light";
+}
+.bookings .modalA .flex input {
+  display: inline;
+  height: 3rem;
+  margin-top: -0.91em;
+  margin-left: -0.2em;
+}
+.bookings .modalA .parag {
+  height: unset;
+}
+.bookings .modalA .parag p {
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: "light";
+}
+.bookings .modalA .parag p a {
+  font-family: "heavy";
+  color: #261B6C;
+}
+.bookings .modalA .button {
+  width: 100%;
+}
+
+.overlay {
+  z-index: 2000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.donate {
+  position: relative;
+}
+.donate .p-tag {
+  font-size: 0.9rem;
+  margin-left: 2.5em;
+  font-family: "light";
+  text-align: center;
+}
+.donate .close-modalB, .donate .close-modalC {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  top: 0.4em;
+  right: 0.4em;
+  font-size: 1rem;
+  padding: 0.3em;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: #261B6C;
+}
+.donate .modalA, .donate .modalC {
+  position: absolute;
+  min-height: 120%;
+  padding: 1em;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.donate .modalA h1, .donate .modalC h1 {
+  text-align: center;
+  margin-top: 1em;
+}
+.donate .modalA .div, .donate .modalC .div {
+  width: 100%;
+  height: 4.2rem;
+  padding: 0.6em;
+}
+.donate .modalA .div .w50, .donate .modalA .div input, .donate .modalC .div .w50, .donate .modalC .div input {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  color: #000000;
+  background: rgb(247, 246, 231);
+  height: 100%;
+}
+.donate .modalA .flex-container, .donate .modalC .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.donate .modalA .flex-container .div, .donate .modalC .flex-container .div {
+  width: 100%;
+}
+.donate .modalA .flex-container .div textarea, .donate .modalC .flex-container .div textarea {
+  padding: 0.7em;
+  width: 100%;
+  border: none;
+  margin-top: 2em;
+  background: rgb(247, 246, 231);
+}
+.donate .modalA .flex-container .div input, .donate .modalC .flex-container .div input {
+  width: 100%;
+}
+.donate .modalA .flex, .donate .modalC .flex {
+  display: flex;
+  flex-direction: row;
+}
+.donate .modalA .flex p, .donate .modalC .flex p {
+  font-size: 0.8rem;
+  width: 100%;
+  font-family: "light";
+}
+.donate .modalA .flex input, .donate .modalC .flex input {
+  display: inline;
+  height: 3rem;
+  margin-top: -0.91em;
+  margin-left: -0.2em;
+}
+.donate .modalA .parag, .donate .modalC .parag {
+  height: unset;
+}
+.donate .modalA .parag p, .donate .modalC .parag p {
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: "light";
+}
+.donate .modalA .parag p a, .donate .modalC .parag p a {
+  font-family: "heavy";
+  color: #261B6C;
+}
+.donate .modalA .flex-containerB, .donate .modalC .flex-containerB {
+  display: flex;
+}
+.donate .modalA .flex-containerB textarea, .donate .modalC .flex-containerB textarea {
+  padding: 0.7em;
+  border: none;
+  margin-top: 17em;
+  width: 100%;
+  background: rgb(247, 246, 231);
+}
+.donate .modalA .button, .donate .modalC .button {
+  width: 100%;
+}
+.donate .modalA .buttons, .donate .modalC .buttons {
+  width: 100%;
+  margin-top: 28em;
+}
+
+.overlay {
+  z-index: 2000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .callback form .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  nav {
+    margin-bottom: 2em;
+  }
+  nav a .logo {
+    height: 3rem;
+    width: 12rem;
+    z-index: 1;
+    margin-left: 0em;
+  }
+  nav a .logo img {
+    margin-top: 2em;
+    margin-left: 2.7em;
+    width: 100%;
+    -o-object-fit: contian;
+       object-fit: contian;
+  }
+  nav ul li a {
+    display: none;
+  }
+  nav ul button {
+    display: none;
+  }
+  header #back {
+    background-position: center;
+  }
+  header .header-text p {
+    font-size: 1.3rem;
+  }
+  header .bread {
+    height: 100%;
+    width: 100%;
+  }
+  header .bread img {
+    width: 100%;
+    height: 100%;
+  }
+  .mission {
+    height: 27vh;
+  }
+  .mission .mission-container .text-container p {
+    width: 100%;
+  }
+  .about p {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .bookings p {
+    width: 100%;
+  }
+  .bookings button {
+    width: 70%;
+  }
+  .donate p {
+    width: 100%;
+  }
+  .donate button {
+    width: 70%;
+  }
+  #donate p {
+    width: unset;
+  }
+  .kids .mario img {
+    width: 100%;
+    height: 110%;
+    margin-left: -5em;
+  }
+  .kids .text button {
+    width: 80%;
+  }
+  #kids-header #flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kids-header #flex-container .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kids-header #flex-container .text-container h1 {
+    color: #261B6C;
+    font-size: 6rem;
+    font-family: "dumb";
+  }
+  #kids-header #flex-container .img-container img {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -3em;
+  }
+  .maze img {
+    margin-top: 1.6em;
+  }
+  .maze .text-container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  .maze .text-container button {
+    display: inline-block;
+    background-color: #b2904c;
+    color: white;
+    border: none;
+    padding: 0.4em 2.1em;
+    border-radius: 3px;
+    font-family: "heavy";
+    font-size: 1.3rem;
+    width: 90%;
+  }
+  .maze .text-container h1 {
+    padding-top: 1em;
+    font-family: "black";
+  }
+  .maze .text-container p {
+    font-family: "black";
+  }
+  .maze #maze-background {
+    border-radius: 5px;
+    padding: 3em;
+    background: #018BF1;
+  }
+  .recipe .center .tab-links {
+    margin-left: -1em;
+  }
+  .recipe .center .tab-links li {
+    font-size: 1.6rem;
+  }
+  .recipe .flex-container {
+    justify-content: space-between !important;
+  }
+  .recipe .flex-container .card {
+    width: 32.7% !important;
+  }
+  .promotions .background .text-container {
+    align-items: start;
+  }
+  .promotions .background .text-container h2 {
+    text-align: left;
+  }
+  .promotions .background .text-container label button {
+    height: 30%;
+  }
+  .promotions .background .img-container img {
+    height: 150%;
+    width: 110%;
+    margin-top: -3em;
+  }
+  footer {
+    margin-top: 5em;
+    color: white;
+  }
+  footer .back {
+    background-color: #261B6C;
+  }
+  footer .logo {
+    margin-bottom: 4em;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  footer .logo .line {
+    width: 60%;
+    height: 2px;
+    background: white;
+  }
+  footer .logo .logo-container {
+    text-align: center;
+  }
+  footer .logo .logo-container img {
+    width: 80%;
+  }
+  footer .heading {
+    font-family: "black";
+    font-size: 1.3rem;
+  }
+  footer #heading {
+    margin-top: unset;
+  }
+  footer .left {
+    margin-left: 1.2em;
+  }
+  footer ul li {
+    font-size: 0.9rem;
+  }
+  footer ul li span img {
+    height: 1rem !important;
+  }
+  footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+  }
+  footer .feed .feed-container {
+    width: 32%;
+  }
+  footer .feed img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer .line {
+    width: 100%;
+    height: 2px;
+    background: white;
+    display: unset;
+  }
+  footer .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .bottom .left {
+    margin-top: 1em;
+    display: flex !important;
+    flex-direction: row;
+  }
+  footer .bottom .left img {
+    margin-top: -2em;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 35%;
+  }
+  footer .bottom .right span {
+    color: #b2904c;
+  }
+  .bookings {
+    position: relative;
+  }
+  .bookings .close-modalA {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    top: 0.4em;
+    right: 0.4em;
+    font-size: 1rem;
+    padding: 0.3em;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: #261B6C;
+  }
+  .bookings .modalA {
+    position: absolute;
+    min-height: 230%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+  }
+  .bookings .modalA .flex-container {
+    flex-wrap: nowrap;
+  }
+  .bookings .modalA .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .bookings .modalA .flex p {
+    font-size: 1rem;
+    width: 100%;
+    font-family: "light";
+  }
+  .bookings .modalA .flex input {
+    display: inline;
+    height: 3rem;
+    margin-top: -0.91em;
+    margin-left: -0.2em;
+  }
+  .bookings .modalA .parag {
+    height: unset;
+  }
+  .bookings .modalA .parag .right {
+    margin-left: 2em;
+  }
+  .bookings .modalA .parag p {
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: "light";
+  }
+  .bookings .modalA .flex-containers {
+    display: flex;
+    justify-content: center;
+  }
+  .donate {
+    position: relative;
+  }
+  .donate .p-tag {
+    width: 100%;
+    margin-left: unset;
+    text-align: unset;
+  }
+  .donate .modalC {
+    min-height: 180%;
+  }
+  .donate .modalA {
+    position: absolute;
+    min-height: 100%;
+    width: 95%;
+  }
+  .donate .modalA .flex-container {
+    flex-wrap: nowrap;
+  }
+  .donate .modalA .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .donate .modalA .flex p {
+    font-size: 1rem;
+    width: 100%;
+    font-family: "light";
+  }
+  .donate .modalA .flex input {
+    display: inline;
+    height: 3rem;
+    margin-top: -0.91em;
+    margin-left: -0.2em;
+  }
+  .donate .modalA .parag {
+    height: unset;
+  }
+  .donate .modalA .parag .right {
+    margin-left: 2em;
+  }
+  .donate .modalA .parag p {
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: "light";
+  }
+  .donate .modalA .flex-containers {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  nav {
+    margin-bottom: -1em;
+  }
+  nav a .logo {
+    height: 3rem;
+    width: 12rem;
+    z-index: 1;
+    margin-left: 0em;
+  }
+  nav a .logo img {
+    margin-top: 1em;
+    margin-left: 3.3em;
+    width: 100%;
+    -o-object-fit: contian;
+       object-fit: contian;
+  }
+  nav ul li a {
+    display: block;
+  }
+  nav ul button {
+    display: block;
+  }
+  header .header-text button {
+    width: 60%;
+  }
+  .products {
+    padding-top: 7rem;
+  }
+  .products h1 {
+    margin-bottom: 3rem;
+  }
+  .products button {
+    margin-bottom: 1rem;
+  }
+  .recipe .flex-container {
+    justify-content: space-evenly !important;
+  }
+  .recipe .flex-container .card {
+    width: 30% !important;
+  }
+  .mission {
+    height: 45vh;
+  }
+  .mission .mission-container .text-container p {
+    width: 80%;
+  }
+  .bookings p {
+    width: 100%;
+  }
+  .bookings button {
+    width: 50%;
+  }
+  .donate p {
+    width: 100%;
+  }
+  .donate button {
+    width: 50%;
+  }
+  .kids .text button {
+    width: 30%;
+  }
+  .kids .mario img {
+    height: 110%;
+    width: 120%;
+    margin-left: -4em;
+  }
+  .promotions .background .text-container {
+    margin-left: 2em;
+  }
+  .promotions .background .text-container h2 {
+    width: 65%;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .promotions .background .text-container label {
+    height: 3rem;
+    margin-bottom: 2em;
+  }
+  .promotions .background .text-container label input[type=text] {
+    height: 3.5rem;
+  }
+  .promotions .background .text-container label button {
+    height: 100%;
+  }
+  .promotions .background .text-container label input[placeholder="your email"] {
+    color: white !important;
+  }
+  .promotions .background .img-container {
+    height: 120%;
+    margin-top: -4em;
+  }
+  .promotions .background .img-container img {
+    height: 120%;
+    width: 110%;
+  }
+  footer {
+    margin-top: 5em;
+    color: white;
+  }
+  footer .back {
+    background-color: #261B6C;
+  }
+  footer .logo {
+    margin-bottom: 4em;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  footer .logo .line {
+    width: 60%;
+    height: 2px;
+    background: white;
+  }
+  footer .logo .logo-container {
+    text-align: center;
+  }
+  footer .logo .logo-container img {
+    width: 80%;
+  }
+  footer .heading {
+    font-family: "black";
+    font-size: 1.3rem;
+  }
+  footer #heading {
+    margin-top: unset;
+  }
+  footer .left {
+    margin-left: 1.2em;
+  }
+  footer ul li {
+    font-size: 0.9rem;
+  }
+  footer ul li span img {
+    height: 1rem !important;
+  }
+  footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+  }
+  footer .feed .feed-container {
+    width: 23%;
+  }
+  footer .feed img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer .line {
+    width: 100%;
+    height: 2px;
+    background: white;
+    display: unset;
+  }
+  footer .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .bottom .left {
+    margin-top: 1em;
+    display: flex !important;
+    flex-direction: row;
+  }
+  footer .bottom .left img {
+    margin-top: -1em;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 35%;
+  }
+  footer .bottom .right span {
+    color: #b2904c;
+  }
+  #kids-header {
+    margin-top: -1em;
+    z-index: -2;
+  }
+  #kids-header #flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #kids-header #flex-container .text-container {
+    margin-left: 1.4em;
+  }
+  #kids-header #flex-container .text-container h1 {
+    color: #261B6C;
+    font-size: 7rem;
+    font-family: "dumb";
+  }
+  #kids-header #flex-container .img-container img {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -3em;
+  }
+  .maze img {
+    margin-top: unset;
+  }
+  .maze .text-container {
+    margin-left: 1em;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+  }
+  .maze .text-container button {
+    display: inline-block;
+    background-color: #b2904c;
+    color: white;
+    border: none;
+    padding: 0.4em 2.1em;
+    border-radius: 3px;
+    font-family: "heavy";
+    font-size: 1.3rem;
+    width: 70%;
+  }
+  .maze .text-container h1 {
+    padding-top: 4em;
+    font-family: "black";
+  }
+  .maze .text-container p {
+    width: 75%;
+    font-size: 1.1rem;
+  }
+  .maze #maze-background {
+    border-radius: 5px;
+    padding: 3em;
+    background: #018BF1;
+  }
+  .bookings {
+    position: relative;
+  }
+  .bookings .close-modalA {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    top: 0.4em;
+    right: 0.4em;
+    font-size: 1rem;
+    padding: 0.3em;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: #261B6C;
+  }
+  .bookings .modalA {
+    position: fixed;
+    min-height: 110%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+  }
+  .bookings .modalA .flex-container {
+    flex-wrap: nowrap;
+  }
+  .bookings .modalA .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .bookings .modalA .flex p {
+    font-size: 1rem;
+    width: 100%;
+    font-family: "light";
+  }
+  .bookings .modalA .flex input {
+    display: inline;
+    height: 3rem;
+    margin-top: -0.91em;
+    margin-left: -0.2em;
+  }
+  .bookings .modalA .parag {
+    height: unset;
+  }
+  .bookings .modalA .parag .right {
+    margin-left: 2em;
+  }
+  .bookings .modalA .parag p {
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: "light";
+  }
+  .bookings .modalA .flex-containers {
+    display: flex;
+    justify-content: center;
+  }
+  .bookings {
+    position: relative;
+  }
+  .bookings .close-modalA {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    top: 0.4em;
+    right: 0.4em;
+    font-size: 1rem;
+    padding: 0.3em;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: #261B6C;
+  }
+  .bookings .modalA, .bookings .modalC {
+    position: fixed;
+    min-height: 88%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .bookings .modalA .flex-container, .bookings .modalC .flex-container {
+    flex-wrap: nowrap;
+  }
+  .bookings .modalA .flex, .bookings .modalC .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .bookings .modalA .flex p, .bookings .modalC .flex p {
+    font-size: 1rem;
+    width: 100%;
+    font-family: "light";
+  }
+  .bookings .modalA .flex input, .bookings .modalC .flex input {
+    display: inline;
+    height: 3rem;
+    margin-top: -0.91em;
+    margin-left: -0.2em;
+  }
+  .bookings .modalA .parag, .bookings .modalC .parag {
+    height: unset;
+  }
+  .bookings .modalA .parag .right, .bookings .modalC .parag .right {
+    margin-left: 2em;
+  }
+  .bookings .modalA .parag p, .bookings .modalC .parag p {
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: "light";
+  }
+  .bookings .modalA .flex-containers, .bookings .modalC .flex-containers {
+    display: flex;
+    justify-content: center;
+  }
+  .bookings .modalA button, .bookings .modalC button {
+    cursor: pointer;
+  }
+  .donate {
+    position: relative;
+  }
+  .donate .modalC {
+    min-height: 85%;
+    width: 80%;
+    position: unset;
+    position: fixed;
+  }
+  .donate .modalC .flex-container textarea {
+    height: 10rem;
+    margin-top: 2em;
+  }
+  .donate .modalC .flex-containerB textarea {
+    height: 10rem;
+    margin-top: unset;
+    margin-top: 10rem;
+  }
+  .donate .modalC .buttons {
+    width: 100%;
+    margin-top: 16em;
+  }
+  .donate .modalA {
+    position: fixed;
+    min-height: 88%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .donate .modalA .p-tag {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  .donate .modalA .flex-container {
+    flex-wrap: nowrap;
+  }
+  .donate .modalA .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .donate .modalA .flex p {
+    font-size: 1rem;
+    width: 100%;
+    font-family: "light";
+  }
+  .donate .modalA .flex input {
+    display: inline;
+    height: 3rem;
+    margin-top: -0.91em;
+    margin-left: -0.2em;
+  }
+  .donate .modalA button {
+    cursor: pointer;
+  }
+  .donate .modalB {
+    min-height: 50%;
+  }
+}
+.hidden {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s;
+}
+
+.open-modal {
+  display: block;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .maze img {
+    margin-top: unset;
+  }
+  .maze .text-container {
+    margin-left: 1em;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+  }
+  .maze .text-container button {
+    display: inline-block;
+    background-color: #b2904c;
+    color: white;
+    border: none;
+    padding: 0.4em 2.1em;
+    border-radius: 3px;
+    font-family: "heavy";
+    font-size: 1.3rem;
+    width: 40%;
+  }
+  .maze .text-container h1 {
+    padding-top: 1em;
+    font-family: "black";
+  }
+  .maze .text-container p {
+    width: 75%;
+    font-size: 1.1rem;
+  }
+  .maze #maze-background {
+    border-radius: 5px;
+    padding: 3em;
+    background: #018BF1;
+  }
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width */
+@media (width: 1024px) {
+  .bookings {
+    position: relative;
+  }
+  .bookings .modalA {
+    position: absolute;
+    min-height: 200%;
+    transform: translate(-50%, -50%);
+    width: 88%;
+  }
+  .bookings .modalA .flex-container {
+    flex-wrap: nowrap;
+  }
+  .bookings .modalA .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .bookings .modalA .flex p {
+    font-size: 1rem;
+    width: 100%;
+    font-family: "light";
+  }
+  .bookings .modalA .flex input {
+    display: inline;
+    height: 3rem;
+    margin-top: -0.91em;
+    margin-left: -0.2em;
+  }
+  .bookings .modalA .parag {
+    height: unset;
+  }
+  .bookings .modalA .parag .right {
+    margin-left: 2em;
+  }
+  .bookings .modalA .parag p {
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: "light";
+  }
+  .bookings .modalA .flex-containers {
+    display: flex;
+    justify-content: center;
+  }
+  .donate {
+    position: relative;
+  }
+  .donate .modalC {
+    min-height: 118%;
+    width: 88%;
+  }
+  .donate .modalC .flex-container textarea {
+    height: 10rem;
+    margin-top: 2em;
+  }
+  .donate .modalC .flex-containerB textarea {
+    height: 10rem;
+    margin-top: unset;
+    margin-top: 10rem;
+  }
+  .donate .modalC .buttons {
+    width: 100%;
+    margin-top: 17em;
+  }
+  .donate .modalA {
+    position: absolute;
+    min-height: 118%;
+    transform: translate(-50%, -50%);
+    width: 88%;
+  }
+  .donate .modalA .flex-container {
+    flex-wrap: nowrap;
+  }
+  .donate .modalA .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .donate .modalA .flex p {
+    font-size: 1rem;
+    width: 100%;
+    font-family: "light";
+  }
+  .donate .modalA .flex input {
+    display: inline;
+    height: 3rem;
+    margin-top: -0.91em;
+    margin-left: -0.2em;
+  }
+  .donate .modalA .parag {
+    height: unset;
+  }
+  .donate .modalA .parag .right {
+    margin-left: 2em;
+  }
+  .donate .modalA .parag p {
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: "light";
+  }
+  .donate .modalA .flex-containers {
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
